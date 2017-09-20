@@ -1,18 +1,22 @@
 {
   "name": "ide-css",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Atom-IDE support for CSS language",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liuderchi/ide-css.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/liuderchi/ide-css.git",
+  "keywords": [
+    "atom-ide",
+    "css",
+    "css-parsing",
+    "ide",
+    "language-server-protocol",
+    "outline-view"
+  ],
+  "author": "Te-Chi Liu",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/liuderchi/ide-css/issues"
   },
