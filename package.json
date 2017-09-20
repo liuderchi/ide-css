@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/liuderchi/ide-css/issues"
   },
-  "homepage": "https://github.com/liuderchi/ide-css#readme"
+  "homepage": "https://github.com/liuderchi/ide-css#readme",
+  "devDependencies": {
+    "eslint": "^4.7.1"
+  }
 }
