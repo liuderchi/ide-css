@@ -2,8 +2,8 @@ const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
 
 class CSSLanguageClient extends AutoLanguageClient {
-  getGrammarScopes () { return ['source.css'] }
-  getLanguageName () { return 'CSS' }
+  getGrammarScopes () { return ['source.css', 'source.css.less', 'source.css.scss'] }
+  getLanguageName () { return 'CSS/LESS/SCSS' }
   getServerName () { return 'VSCODE-CSS-LANG-SERVER' }
   getConnectionType() { return 'stdio' } // ipc, socket, stdio
 
