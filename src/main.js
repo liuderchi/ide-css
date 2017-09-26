@@ -22,24 +22,4 @@ class CSSLanguageClient extends AutoLanguageClient {
   }
 }
 
-const noticeUserPkgRenamed = () => {
-  const newPkgLinkMarkup = '[`ide-css-less-scss`](https://atom.io/packages/ide-css-less-scss)'
-  atom.notifications.addInfo(
-    `## \`ide-css\` is now ${newPkgLinkMarkup}.\n\n\`ide-css\` is renamed as ${newPkgLinkMarkup}.<br/>Please install ${newPkgLinkMarkup} for latest features.`,
-    {
-      buttons: [
-        {
-          text: 'Install ide-css-less-scss in Settings',
-          onDidClick: () => {
-            const paneElement = atom.views.getView(atom.workspace.getActivePane())
-            atom.commands.dispatch(paneElement, 'settings-view:install-packages-and-themes')
-          },
-        },
-      ],
-      dismissable: true,
-    }
-  )
-}
-noticeUserPkgRenamed()
-
 module.exports = new CSSLanguageClient()
