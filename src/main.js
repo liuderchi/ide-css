@@ -1,8 +1,17 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
+const { registerConfigOnChangeHandlers } = require('./util')
+
+registerConfigOnChangeHandlers()
 
 class CSSLanguageClient extends AutoLanguageClient {
-  getGrammarScopes () { return ['source.css', 'source.css.less', 'source.css.scss'] }
+  getGrammarScopes () {
+    const { additionalGrammars, lessSupport, scssSupport } = atom.config.get('ide-css')
+    return ['source.css']
+      .concat(lessSupport ? 'source.css.less' : [])
+      .concat(scssSupport ? 'source.css.scss' : [])
+      .concat(additionalGrammars || [])
+  }
   getLanguageName () { return 'CSS/LESS/SCSS' }
   getServerName () { return 'VSCODE-CSS-LANG-SERVER' }
   getConnectionType() { return 'stdio' } // ipc, socket, stdio
