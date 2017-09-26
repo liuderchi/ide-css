@@ -1,7 +1,7 @@
 {
   "name": "ide-css",
   "version": "0.1.2",
-  "description": "Atom-IDE support for CSS language",
+  "description": "Atom-IDE for CSS, LESS and SCSS language",
   "main": "src/main.js",
   "scripts": {
     "lint": "eslint ./src",
@@ -11,7 +11,9 @@
   "keywords": [
     "atom-ide",
     "css",
-    "css-parsing",
+    "less",
+    "scss",
+    "style-sheet",
     "ide",
     "language-server-protocol",
     "outline-view"
@@ -33,7 +35,9 @@
     "atom": ">=1.21.0"
   },
   "enhancedScopes": [
-    "source.css"
+    "source.css",
+    "source.css.less",
+    "source.css.scss"
   ],
   "consumedServices": {
     "linter-indie": {
