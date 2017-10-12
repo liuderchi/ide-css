@@ -1,12 +1,21 @@
+const packageJSON = require('../package.json')
+
 const registerConfigOnChangeHandlers = () => {
-  atom.config.onDidChange('ide-css.additionalGrammars', () =>
-    promptUserReloadAtom('Reload `ide-css` to apply additional grammars')
+  const { name } = packageJSON
+  atom.config.onDidChange(`${name}.additionalGrammars`, () =>
+    promptUserReloadAtom(`Reload \`${name}\` to apply additional grammars`)
   )
-  atom.config.onDidChange('ide-css.lessSupport', () => promptUserReloadAtom() )
-  atom.config.onDidChange('ide-css.scssSupport', () => promptUserReloadAtom() )
+  registerOnChangeForBooleanConfigs(packageJSON)
 }
 
-const promptUserReloadAtom = (msg = 'Reload `ide-css` to apply changes') => {
+const registerOnChangeForBooleanConfigs = ({ name, configSchema }) => {
+  Object.keys(configSchema)
+    .map(key => ({ name: key, value: configSchema[key] }))
+    .filter(({ value: { type } }) => type === 'boolean')
+    .forEach(config => atom.config.onDidChange(`${name}.${config.name}`, () => promptUserReloadAtom()))
+}
+
+const promptUserReloadAtom = (msg = `Reload \`${packageJSON.name}\` to apply changes`) => {
   const buttons = [{
     text: 'Reload',
     onDidClick: () => atom.reload(),
