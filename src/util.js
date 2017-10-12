@@ -1,4 +1,9 @@
-const packageJSON = require('../package.json')
+let packageJSON = {}
+
+const loadPackageJsonWrap = fcn => ({ packageJsonPath }) => (...args) => {
+  packageJSON = require(packageJsonPath)
+  return fcn(...args)
+}
 
 const registerConfigOnChangeHandlers = () => {
   const { name } = packageJSON
@@ -30,6 +35,6 @@ const promptUserReloadAtom = (msg = `Reload \`${packageJSON.name}\` to apply cha
 }
 
 module.exports = {
-  registerConfigOnChangeHandlers,
-  promptUserReloadAtom,
+  registerConfigOnChangeHandlers: loadPackageJsonWrap(registerConfigOnChangeHandlers),
+  promptUserReloadAtom: loadPackageJsonWrap(promptUserReloadAtom),
 }

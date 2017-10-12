@@ -2,12 +2,16 @@ const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
 const { registerConfigOnChangeHandlers } = require('./util')
 const { registerHelpCommands } = require('./help_cmd')
+const { promptUserReloadAtom } = require('./util')
+
+const packageJsonPath = path.join(__dirname, '../package.json')
 
 class CSSLanguageClient extends AutoLanguageClient {
   constructor() {
     super()
-    registerConfigOnChangeHandlers()
-    registerHelpCommands()
+    registerConfigOnChangeHandlers({ packageJsonPath }).call()
+    registerHelpCommands({ packageJsonPath })
+    promptUserReloadAtom({ packageJsonPath }).call(this, 'foo reload')
   }
   getGrammarScopes () {
     const { additionalGrammars, lessSupport, scssSupport } = atom.config.get('ide-css')

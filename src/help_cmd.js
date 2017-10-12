@@ -1,5 +1,5 @@
 const { shell } = require('electron')
-const packageJSON = require('../package.json')
+let packageJSON = {}
 
 const generateHelpMsg = () => {
   const { name, version, atomCommands: commands } = packageJSON
@@ -26,7 +26,8 @@ const gerneateButtons = () => {
   ]
 }
 
-const registerHelpCommands = () => {
+const registerHelpCommands = ({ packageJsonPath }) => {
+  packageJSON = require(packageJsonPath)
   atom.commands.add('atom-workspace', `${packageJSON.name}:help`, () => {
     atom.notifications.addInfo(
       generateHelpMsg(),
