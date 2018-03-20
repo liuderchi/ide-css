@@ -97,9 +97,9 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.0.tgz#ed5f0ce76fb6ef9e098faf765c619d72c60bbcd6"
+atom-languageclient@^0.9.4:
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.4.tgz#fec5fb7a4a03f6336404f72a2907a346ed3db806"
   dependencies:
     "@types/atom" "^1.24.1"
     "@types/node" "^8.0.41"
