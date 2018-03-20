@@ -1,5 +1,6 @@
 {
   "pinVersions": false,
+  "upgradeInRange": true,
   "extends": [
     "config:base"
   ]
