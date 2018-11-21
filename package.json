@@ -7,7 +7,7 @@
     "lint": "eslint ./src",
     "test": "npm run lint"
   },
-  "repository": "https://github.com/liuderchi/ide-css.git",
+  "repository": "liuderchi/ide-css",
   "keywords": [
     "atom-ide",
     "css",
