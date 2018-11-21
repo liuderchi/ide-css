@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/liuderchi/ide-css#readme",
   "devDependencies": {
-    "eslint": "^4.7.1"
+    "eslint": "^5.9.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.4",
-    "vscode-css-languageserver-bin": "^1.3.0"
+    "atom-languageclient": "^0.9.8",
+    "vscode-css-languageserver-bin": "^1.4.0"
   },
   "engines": {
     "atom": ">=1.21.0"
