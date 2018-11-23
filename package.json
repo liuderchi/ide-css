@@ -78,9 +78,6 @@
       }
     }
   },
-  "atomCommands": {
-    "ide-css:help": "Provides help information and descriptions of commands."
-  },
   "configSchema": {
     "additionalGrammars": {
       "type": "array",
