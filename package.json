@@ -34,6 +34,11 @@
   "engines": {
     "atom": ">=1.21.0"
   },
+  "enhancedScopes": [
+    "source.css",
+    "source.css.less",
+    "source.css.scss"
+  ],
   "consumedServices": {
     "linter-indie": {
       "versions": {

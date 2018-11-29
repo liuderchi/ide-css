@@ -10,9 +10,8 @@ class CSSLanguageClient extends AutoLanguageClient {
   getGrammarScopes () {
     return [
       'source.css',
-      'source.sass',
       'source.css.less',
-      'source.css.scss',
+      'source.css.scss'
     ]
   }
   getLanguageName () { return 'CSS/LESS/SCSS' }
