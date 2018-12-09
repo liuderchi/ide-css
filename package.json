@@ -80,25 +80,5 @@
   },
   "atomCommands": {
     "ide-css:help": "Provides help information and descriptions of commands."
-  },
-  "configSchema": {
-    "additionalGrammars": {
-      "type": "array",
-      "title": "Register Additional Grammars (Experimental)",
-      "default": [],
-      "description": "Register additional css grammars such as *Sass* or *Stylus* in comma delimited format.</br>e.g. `source.css.sass, source.css.styls`."
-    },
-    "lessSupport": {
-      "type": "boolean",
-      "title": "Less Language Support",
-      "default": true,
-      "description": "Support files with `.less` extension."
-    },
-    "scssSupport": {
-      "type": "boolean",
-      "title": "Scss Language Support",
-      "default": true,
-      "description": "Support files with `.scss` extension."
-    }
   }
 }
