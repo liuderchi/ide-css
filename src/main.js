@@ -11,7 +11,7 @@ class CSSLanguageClient extends AutoLanguageClient {
     return [
       'source.css',
       'source.css.less',
-      'source.css.scss'
+      'source.css.scss',
     ]
   }
   getLanguageName () { return 'CSS/LESS/SCSS' }
