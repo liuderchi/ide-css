@@ -34,6 +34,11 @@
   "engines": {
     "atom": ">=1.21.0"
   },
+  "activationHooks": [
+    "source.css:root-scope-used",
+    "source.css.less:root-scope-used",
+    "source.css.scss:root-scope-used"
+  ],
   "enhancedScopes": [
     "source.css",
     "source.css.less",
