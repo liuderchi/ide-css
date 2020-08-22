@@ -85,10 +85,10 @@ astral-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
   integrity sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
 
-atom-languageclient@^0.9.8:
-  version "0.9.8"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.8.tgz#3a698046d0ecdb4aa56d74ca580cab309089b655"
-  integrity sha512-xVjqlaszrgaQvnO6gmyhNVqj2KMsQ4jvIJme8MN9A/cmZ+EZ5ID4YM2e6B9Lbi6oWaJNbz/1lr11JeQPNIXy7w==
+atom-languageclient@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.9.tgz#2d42dc115a4d53b0b600a34d7fe6862d499050ff"
+  integrity sha512-eAKLFhprcDksPtDtG2lrhQEosNMxEbS7MISpw7n6TIoPmTgolvo+GPAF+nSV+Z9MCss91i+M+TNk9Mj5C7y/CQ==
   dependencies:
     fuzzaldrin-plus "^0.6.0"
     vscode-jsonrpc "4.0.0"
