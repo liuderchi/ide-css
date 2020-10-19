@@ -28,7 +28,7 @@
     "eslint": "^7.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.9",
+    "atom-languageclient": "^1.0.0",
     "vscode-css-languageserver-bin": "^1.4.0"
   },
   "engines": {
