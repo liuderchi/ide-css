@@ -77,7 +77,7 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 [demo2]: https://user-images.githubusercontent.com/4994705/30840198-864c7fb4-a23b-11e7-9db7-0c9239b83205.png "demo2"
 
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
-[CONTRIBUTING.md]: https://github.com/liuderchi/ide-css/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
+[CONTRIBUTING.md]: https://github.com/liuderchi/ide-css/blob/main/CONTRIBUTING.md "CONTRIBUTING.md"
 [create-issue]: https://github.com/liuderchi/ide-css/issues/new "create-issue"
 
 [atom-languageclient]: https://github.com/atom/atom-languageclient "atom-languageclient"
