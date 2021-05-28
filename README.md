@@ -1,7 +1,7 @@
 # ide-css
 
 [![apm-download-count][apm-download-count]][apm-download-link]
-[![travis-status][travis-status]][travis-project]
+[![ci-status][ci-status]][ci-link]
 [![dependency-status][david-status]][david-project]
 
 Atom-IDE for CSS, LESS and SCSS language
@@ -69,8 +69,8 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 
 [apm-download-count]: https://img.shields.io/apm/dm/ide-css.svg "apm-download-count"
 [apm-download-link]: https://atom.io/packages/ide-css "apm-download-link"
-[travis-status]: https://travis-ci.org/liuderchi/ide-css.svg?branch=master "travis-status"
-[travis-project]: https://travis-ci.org/liuderchi/ide-css "travis-project"
+[ci-status]: https://github.com/liuderchi/ide-css/actions/workflows/ci.yml/badge.svg "ci-status"
+[ci-link]: https://github.com/liuderchi/ide-css/actions "ci-link"
 [david-status]: https://david-dm.org/liuderchi/ide-css.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-css "david-project"
 [demo1]: https://user-images.githubusercontent.com/4994705/30840126-2a71c32a-a23b-11e7-8dd4-9189723c438a.png "demo1"
