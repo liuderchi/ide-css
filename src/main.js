@@ -1,6 +1,6 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
-const { registerHelpCommands } = require('./help_cmd')
+const { registerHelpCommands } = require('./helpCmd')
 
 class CSSLanguageClient extends AutoLanguageClient {
   constructor() {
